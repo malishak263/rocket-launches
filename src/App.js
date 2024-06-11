@@ -10,12 +10,11 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         <Route index element={<Launches />} />
-        <Route path="/" exact component={Launches} />
-        <Route path="/launch/:id" component={FullDetails} />
+        <Route path="/" element={<Launches />} />
+        <Route path="/launch/:id" element={<FullDetails/>} />
       </Routes>
     </BrowserRouter>
   );
 };
 
 export default App;
-//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
